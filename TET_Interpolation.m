@@ -26,7 +26,7 @@ for i = 1:8
 end
 
 
-csv_file_name = 'per_tetoli25.csv';
+csv_file_name = '';
 
 % Write the matrix to the CSV file
 csvwrite(csv_file_name, mw);
@@ -58,7 +58,7 @@ for i = 1:8
     % Store interpolated values
     per = [per; d_res];
 end
-csv_file_name = 'mw_oli_25.csv';
+csv_file_name = '';
 
 % Write the matrix to the CSV file
 csvwrite(csv_file_name, per);
