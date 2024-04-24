@@ -1,6 +1,6 @@
 # %%
 import csv
-FILENAMES = ["JOM 301passive"] #fill in all of the files here
+FILENAMES = [""] #fill in all of the files here
 
 for filename in FILENAMES:
     with open(filename + ".csv", "r") as f, open(filename + "_fixed.csv", mode="w", newline='') as new:
