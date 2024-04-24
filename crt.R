@@ -1,19 +1,5 @@
-#######################################################################
-# SART & TET Study 
-# 2024
-# Laura Hurn, E. Jubera-Garcia, T. Bekinschtein
-#
-# SART task
-# N = 10? (October 2023 / May 2024)
-#######################################################################
 
-getwd()
-# Set your working directory
-setwd("C:/Users/EsperanzaJubera/Downloads")
-library(readr)
-
-
-sart <- read.csv("olisart.csv")
+sart <- read.csv("......csv")
 
 
 #clean the sart to just have correct colums
@@ -72,7 +58,7 @@ p <- ggplot(all, aes(x=Trial.Number, y=Reaction.Time, colour=Schedule.ID, group=
   theme_bw()
 p
 #p + geom_vline(xintercept = 11, color="red")
-ggsave("oli_rtwitherror.png", p)
+ggsave("", p)
 
 ########################################################################
 # Calculate proportion of errors
@@ -106,8 +92,8 @@ q <- ggplot(all_correct, aes(x=Trial.Number, y=Reaction.Time, colour=Schedule.ID
   #               l=40) +                    
   theme_bw()
 q
-ggsave("oli_NOerrors.png", q)
-write.csv(all_correct, "olicorrect.csv", row.names = TRUE)
+ggsave(".....", q)
+write.csv(all_correct, ".....csv", row.names = TRUE)
 # 3. Calculate RTCV
 
 # Standard deviations
@@ -145,5 +131,5 @@ test <- ggplot(myTest.SD, aes(x=group_trials, y=RTCV , colour=Schedule, group=Sc
   #               labels=c("Task related", "Task unrelated"),
   #              l=40) +                    
   theme_bw()
-write.csv(myTest.SD, "olicrt.csv", row.names = TRUE)
-ggsave("oli_RCTerrors.png", test)
+write.csv(myTest.SD, ".....csv", row.names = TRUE)
+ggsave("......png", test)
