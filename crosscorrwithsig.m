@@ -1,11 +1,8 @@
 % Define folder path for the dataset
-folderPath = '/Users/laurahurn/Desktop/diss/data/passive/dias'; % Update with the actual folder path
+folderPath = ''; % Update with the actual folder path
 
 % Define the list of file names
-fileNames = {'stability_tetdais_15.csv', 'alertness_tetdais_15.csv', ...
-             'boredom_tetdais_15.csv', 'clarity_tetdais_15.csv', ...
-             'emotioncontent_tetdais_15.csv', 'selfother_tetdais_15.csv', ...
-             'tone_tetdais_15.csv', 'timetravel_tetdais_15.csv'};
+fileNames = {};
 
 % Initialize a cell array to store data for each component
 numComponents = numel(fileNames);
@@ -47,7 +44,7 @@ for i = 1:numComponents
 end
 
 % Open a file to write raw correlation coefficients
-fid = fopen('raw_correlation_coefficientdais.txt', 'w');
+fid = fopen('', 'w');
 
 % Write raw correlation coefficients to the file
 fprintf(fid, 'Raw Correlation Coefficients:\n');
