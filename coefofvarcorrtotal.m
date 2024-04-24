@@ -9,7 +9,7 @@ dataCellArray2 = cell(6, 1);
 for day = 1:6
     % Construct file paths for the two sets of data for the current day
     fileName1 = sprintf('', day);
-    fileName2 = sprintf('v', day); % Assuming file names are in the format dais225final1_001.csv, dais225final1_002.csv, etc.
+    fileName2 = sprintf('v', day); 
     filePath1 = fullfile(folderPath1, fileName1);
     filePath2 = fullfile(folderPath2, fileName2);
     
