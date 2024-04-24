@@ -1,6 +1,6 @@
 % Folder paths
-folderPath1 = '/Users/laurahurn/Desktop/diss/data/active /ali/alimw25_files'; 
-folderPath2 = '/Users/laurahurn/Desktop/diss/data/active /ali/aliper25_files';
+folderPath1 = ''; 
+folderPath2 = '';
 % Preallocate cell arrays to store data from each day
 dataCellArray1 = cell(6, 1);
 dataCellArray2 = cell(6, 1);
@@ -8,8 +8,8 @@ dataCellArray2 = cell(6, 1);
 % Loop through each day
 for day = 1:6
     % Construct file paths for the two sets of data for the current day
-    fileName1 = sprintf('mw25_alibyday_%d.csv', day);
-    fileName2 = sprintf('per25_alibyday_%d.csv', day); % Assuming file names are in the format dais225final1_001.csv, dais225final1_002.csv, etc.
+    fileName1 = sprintf('', day);
+    fileName2 = sprintf('v', day); % Assuming file names are in the format dais225final1_001.csv, dais225final1_002.csv, etc.
     filePath1 = fullfile(folderPath1, fileName1);
     filePath2 = fullfile(folderPath2, fileName2);
     
@@ -53,7 +53,7 @@ fprintf('Correlation coefficient between compiled data from folders 1 and 2: %f\
 
 % Display the correlation coefficient
 fprintf('Correlation coefficient between compiled data from folders 1 and 2: %f\n', correlationCoeff(1, 2));
-outputFilePath = '/Users/laurahurn/Desktop/diss/data/active /ali/totalcorr_per_mw.csv';
+outputFilePath = '';
 csvwrite(outputFilePath, correlationCoeff);
 
 % Compute correlation coefficient and p-value
