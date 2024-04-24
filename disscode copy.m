@@ -4,7 +4,7 @@ Partisipant = 5
 % Function to extract dimensions from app
 
 %Load path and file
-path=('/Users/laurahurn/Desktop/diss/TETs/oli');
+path=('');
 cd(path)
 
 fname = 'ODESA_APP_DATA1.mat'
