@@ -1,11 +1,10 @@
 # Read data from CSV files
 
-data1 <- read.csv("/Users/laurahurn/Desktop/diss/data/active /ali/corr_resultsperxrt.csv", header = FALSE)
-data2 <- read.csv("/Users/laurahurn/Desktop/diss/data/active /ali/corr_resultsmwxrt.csv",header = FALSE)
-data3 <- read.csv("/Users/laurahurn/Desktop/diss/data/active /ali/corr_resultsmwxCRT.csv",header = FALSE)
-data4 <- read.csv("/Users/laurahurn/Desktop/diss/data/active /ali/corr_resultsperxCRT.csv",header = FALSE)
-data5 <- read.csv("/Users/laurahurn/Desktop/diss/data/active /ali/corr_results_perxmw.csv",header = FALSE)
-
+data1 <- read.csv(")
+data2 <- read.csv()
+data3 <- read.csv(")
+data4 <- read.csv(")
+data5 <- read.csv()
 # Create and save the first plot
 plot1 <- ggplot(data1, aes(x = "", y = V1, fill = "Data1")) +
   geom_violin() +
