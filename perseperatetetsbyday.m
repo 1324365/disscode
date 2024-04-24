@@ -1,5 +1,5 @@
 % Specify the file name for the original CSV file
-original_csv_file_name = 'mw_oli_180.csv';
+original_csv_file_name = '';
 
 % Read data from the original CSV file
 data = readtable(original_csv_file_name);
@@ -29,7 +29,7 @@ for i = 1:num_groups
     current_group = data_matrix(start_index:end_index, :);
     
     % Specify the file name for the current CSV file
-    csv_group_file_name = fullfile(output_folder, ['mw180_alibyday_', num2str(i), '.csv']);
+    csv_group_file_name = fullfile(output_folder, ['', num2str(i), '.csv']);
     
     % Write the current group to a new CSV file
     csvwrite(csv_group_file_name, current_group);
