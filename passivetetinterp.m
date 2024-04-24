@@ -33,7 +33,7 @@ for componentIndex = 1:numel(components)
     end
     
     % Construct CSV file name for the current component
-    csv_file_name = [component '_tetabbyactive_15.csv'];
+    csv_file_name = [component ''];
 
     % Write the interpolated data to the corresponding CSV file for the current component
     csvwrite(csv_file_name, interpolatedData);
