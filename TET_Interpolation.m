@@ -1,11 +1,11 @@
 
 mw = []; % Initialize all as an empty array
 
-for i = 1:8
-    n_samples =25; % Set n_samples to 90 within the loop
+for i = 1:x
+    n_samples =x; % Set n_samples to x within the loop
 
     % Assuming `data` is the same as `Ex`
-    Ex = ODESA_APP_DATA(9).activetask(i).performance
+    Ex = ODESA_APP_DATA(x).activetask(i).performance
 
     % Assuming `Ex` is a matrix where each column represents a variable
     d = Ex(:, 2); % Extracting column 2 of Ex
@@ -35,11 +35,11 @@ csvwrite(csv_file_name, mw);
 
 per = []; % Initialize all as an empty array
 
-for i = 1:8
-    n_samples =25; % Set n_samples to 90 within the loop
+for i = 1:x
+    n_samples =x; % Set n_samples to x within the loop
 
     % Assuming `data` is the same as `Ex`
-    Ex = ODESA_APP_DATA(9).activetask(i).mindwandering
+    Ex = ODESA_APP_DATA(x).activetask(i).mindwandering
 
     % Assuming `Ex` is a matrix where each column represents a variable
     d = Ex(:, 2); % Extracting column 2 of Ex
