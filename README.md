@@ -20,7 +20,7 @@ cross corr with sig: cross correlation matrix with sig values
 CRT: cleaning data and working out coefficient of varibaility 
 
 
-discode copy: load in TETs
+loadintets: load in TETs to database
 
 
 graphingtets: visualising each tet or overlaying 
