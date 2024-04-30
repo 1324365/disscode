@@ -8,8 +8,8 @@ TraceNumber = 10; % Trace number (adjust as needed)
 additional_data = [
 ];
 
-% Assign the additional data to the corresponding fields in the 'dailytrace' field
+
 ODESA_APP_DATA(Partisipant).activetask(TraceNumber).stability = additional_data;
 
-% Save the modified data
+
 save(fname, 'ODESA_APP_DATA');
